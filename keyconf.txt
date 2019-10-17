@@ -1,9 +1,14 @@
 // Aliases /////////////////////////////////////////////////////////////////////
 
+// "m8f_wm_" prefixes are kept for compatibility, so old users of Weapon Menu
+// don't lose their keybinds.
+
 alias m8f_wm_throw_junk "netevent mg_throw_junk"
+alias m8f_wm_holster    "netevent mg_holster"
 
 // Keys ////////////////////////////////////////////////////////////////////////
 
-AddKeySection "m_Gizmos" "m_gizmos_keys"
+AddKeySection "m_Gizmos" m_gizmos_keys
 
-AddMenuKey "Throw Junk" "m8f_wm_throw_junk"
+AddMenuKey "Throw Junk"     m8f_wm_throw_junk
+AddMenuKey "Holster weapon" m8f_wm_holster

@@ -5,17 +5,25 @@ AddOptionMenu OptionsMenu
 
 OptionMenu mg_Options
 {
-  Title "m_Gizmos Options"
+  Title      "m_Gizmos Options"
 
   StaticText "Controls", 1
 
-  Control    "Throw Junk", "m8f_wm_throw_junk"
+  Control    "Throw Junk", m8f_wm_throw_junk
   StaticText "0 damage hitscan attack. Also alerts enemies." , Black
+
+  StaticText ""
+  Control    "Holster weapon", m8f_wm_holster
 
   StaticText ""
   StaticText "Gameplay", 1
 
   StaticText ""
   Option     "Infinite Ammo for Slot 2", m8f_wm_InfiniteSlot2Ammo , YesNo
-  StaticText "Limitation: only for primary fire." , Black
+
+  StaticText ""
+  Option "Change FOV when holstered"  , m8f_wm_HolsterFovEnabled , OnOff
+  Slider "FOV when holstered"         , m8f_wm_HolsterFov , 45.0, 180.0, 5.0
+  Slider "Speed with holstered weapon", M8fWeaponMenuHolsterSpeedMultiplier, 0.0, 3.0, 0.2
+  StaticText "Set this to 0.0 to disable speed change.", Black
 }

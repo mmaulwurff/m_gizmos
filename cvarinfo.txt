@@ -1,3 +1,10 @@
 // user options ////////////////////////////////////////////////////////////////
 
+// "m8f_wm_" prefix is preserved for compatibility, so old Weapon Menu users
+// don't lose their settings.
+
 user bool m8f_wm_InfiniteSlot2Ammo = false;
+
+user float M8fWeaponMenuHolsterSpeedMultiplier = 0.0;
+user bool  m8f_wm_HolsterFovEnabled = true;
+user float m8f_wm_HolsterFov        = 110.0;

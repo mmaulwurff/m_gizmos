@@ -3,5 +3,6 @@ gameinfo
 
   AddEventHandlers = "mg_JunkEventHandler"
                    , "mg_InfiniteSlot2AmmoEventHandler"
+                   , "mg_HolsterEventHandler"
 
 } // gameinfo
