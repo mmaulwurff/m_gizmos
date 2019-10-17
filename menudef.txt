@@ -10,21 +10,24 @@ OptionMenu mg_Options
   StaticText "Controls", 1
 
   Control    "Throw Junk", m8f_wm_throw_junk
-  StaticText "0 damage hitscan attack. Also alerts enemies." , Black
+  StaticText "0 damage hitscan attack. Also alerts enemies.", Black
 
   StaticText ""
   Control    "Holster weapon"         , m8f_wm_holster
   Control    "Select the best weapon" , wm_switch_to_powerful
 
   StaticText ""
+  Control    "Last Used Weapon", m8f_wm_select_last_used
+
+  StaticText ""
   StaticText "Gameplay", 1
 
   StaticText ""
-  Option     "Infinite Ammo for Slot 2", m8f_wm_InfiniteSlot2Ammo , YesNo
+  Option     "Infinite Ammo for Slot 2", m8f_wm_InfiniteSlot2Ammo, YesNo
 
   StaticText ""
   Option "Change FOV when holstered"  , m8f_wm_HolsterFovEnabled , OnOff
-  Slider "FOV when holstered"         , m8f_wm_HolsterFov , 45.0, 180.0, 5.0
+  Slider "FOV when holstered"         , m8f_wm_HolsterFov        , 45.0, 180.0, 5.0
   Slider "Speed with holstered weapon", M8fWeaponMenuHolsterSpeedMultiplier, 0.0, 3.0, 0.2
   StaticText "Set this to 0.0 to disable speed change.", Black
 }

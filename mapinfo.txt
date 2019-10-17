@@ -5,5 +5,6 @@ gameinfo
                    , "mg_InfiniteSlot2AmmoEventHandler"
                    , "mg_HolsterEventHandler"
                    , "mg_BestWeaponEventHandler"
+                   , "mg_PreviousWeaponEventHandler"
 
 } // gameinfo

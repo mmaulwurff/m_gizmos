@@ -12,3 +12,4 @@ License: GPLv3
 - throwing junk (zero-damage hitscan attack)
 - weapon holstering
 - a key to select the best weapon
+- a key to select the previously used weapon

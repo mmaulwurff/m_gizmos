@@ -3,14 +3,16 @@
 // "m8f_wm_" and "wm_" prefixes are kept for compatibility, so old users of
 // Weapon Menu don't lose their keybinds.
 
-alias m8f_wm_throw_junk     "netevent mg_throw_junk"
-alias m8f_wm_holster        "netevent mg_holster"
-alias wm_switch_to_powerful "netevent mg_best_weapon"
+alias m8f_wm_throw_junk       "netevent mg_throw_junk"
+alias m8f_wm_holster          "netevent mg_holster"
+alias wm_switch_to_powerful   "netevent mg_best_weapon"
+alias m8f_wm_select_last_used "netevent mg_prev_weapon"
 
 // Keys ////////////////////////////////////////////////////////////////////////
 
 AddKeySection "m_Gizmos" m_gizmos_keys
 
-AddMenuKey "Throw Junk"     m8f_wm_throw_junk
-AddMenuKey "Holster weapon" m8f_wm_holster
+AddMenuKey "Throw Junk"             m8f_wm_throw_junk
+AddMenuKey "Holster weapon"         m8f_wm_holster
 AddMenuKey "Select the best weapon" wm_switch_to_powerful
+AddMenuKey "Last Used Weapon"       m8f_wm_select_last_used
