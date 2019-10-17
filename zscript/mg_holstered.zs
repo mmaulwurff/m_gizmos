@@ -68,8 +68,10 @@ class mg_Holstered : Weapon
 
   Default
   {
-    +Inventory.UNDROPPABLE;
-    +Weapon.NOALERT;
+    +Inventory.UNDROPPABLE
+    +Weapon.NOALERT
+    +Weapon.CHEATNOTWEAPON
+
     Weapon.SlotNumber 0;
   }
 

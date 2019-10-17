@@ -11,3 +11,4 @@ License: GPLv3
 - infinite ammo for slot 2
 - throwing junk (zero-damage hitscan attack)
 - weapon holstering
+- a key to select the best weapon

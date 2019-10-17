@@ -13,7 +13,8 @@ OptionMenu mg_Options
   StaticText "0 damage hitscan attack. Also alerts enemies." , Black
 
   StaticText ""
-  Control    "Holster weapon", m8f_wm_holster
+  Control    "Holster weapon"         , m8f_wm_holster
+  Control    "Select the best weapon" , wm_switch_to_powerful
 
   StaticText ""
   StaticText "Gameplay", 1
