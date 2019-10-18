@@ -13,3 +13,4 @@ License: GPLv3
 - weapon holstering
 - a key to select the best weapon
 - a key to select the previously used weapon
+- a key to select the next weapon in the current slot

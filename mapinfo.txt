@@ -6,5 +6,6 @@ gameinfo
                    , "mg_HolsterEventHandler"
                    , "mg_BestWeaponEventHandler"
                    , "mg_PreviousWeaponEventHandler"
+                   , "mg_NextWeaponInSlotEventHandler"
 
 } // gameinfo

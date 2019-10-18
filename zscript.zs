@@ -5,3 +5,4 @@ version 4.2
 #include "zscript/mg_holstered.zs"
 #include "zscript/mg_best_weapon.zs"
 #include "zscript/mg_previous_weapon.zs"
+#include "zscript/mg_next_weapon_in_slot.zs"

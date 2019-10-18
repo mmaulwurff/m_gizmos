@@ -7,12 +7,15 @@ alias m8f_wm_throw_junk       "netevent mg_throw_junk"
 alias m8f_wm_holster          "netevent mg_holster"
 alias wm_switch_to_powerful   "netevent mg_best_weapon"
 alias m8f_wm_select_last_used "netevent mg_prev_weapon"
+alias wm_next_in_slot         "netevent mg_next_weapon_in_slot"
+
 
 // Keys ////////////////////////////////////////////////////////////////////////
 
-AddKeySection "m_Gizmos" m_gizmos_keys
+addKeySection "m_Gizmos" m_gizmos_keys
 
-AddMenuKey "Throw Junk"             m8f_wm_throw_junk
-AddMenuKey "Holster weapon"         m8f_wm_holster
-AddMenuKey "Select the best weapon" wm_switch_to_powerful
-AddMenuKey "Last Used Weapon"       m8f_wm_select_last_used
+addMenuKey "Throw Junk"             m8f_wm_throw_junk
+addMenuKey "Holster weapon"         m8f_wm_holster
+addMenuKey "Select the best weapon" wm_switch_to_powerful
+addMenuKey "Last Used Weapon"       m8f_wm_select_last_used
+addMenuKey "Next in slot"           wm_next_in_slot
