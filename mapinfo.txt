@@ -7,5 +7,6 @@ gameinfo
                    , "mg_BestWeaponEventHandler"
                    , "mg_PreviousWeaponEventHandler"
                    , "mg_NextWeaponInSlotEventHandler"
+                   , "mg_ZoomEventHandler"
 
 } // gameinfo

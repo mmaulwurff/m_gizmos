@@ -5,9 +5,15 @@ AddOptionMenu OptionsMenu
 
 OptionMenu mg_Options
 {
-  Title      "m_Gizmos Options"
+  Title   "m_Gizmos Options"
 
-  StaticText "Controls", 1
+  Submenu "Controls", mg_Controls
+  Submenu "Gameplay", mg_Gameplay
+}
+
+OptionMenu mg_Controls
+{
+  Title      "m_Gizmos Controls"
 
   Control    "Throw Junk", m8f_wm_throw_junk
   StaticText "0 damage hitscan attack. Also alerts enemies.", Black
@@ -21,14 +27,44 @@ OptionMenu mg_Options
   Control    "Last Used Weapon", m8f_wm_select_last_used
 
   StaticText ""
-  StaticText "Gameplay", 1
+  Control    "Toggle Zoom", m8f_wm_toggle_zoom
+}
+
+OptionMenu mg_Gameplay
+{
+  Title      "m_Gizmos Gameplay Options"
 
   StaticText ""
   Option     "Infinite Ammo for Slot 2", m8f_wm_InfiniteSlot2Ammo, YesNo
 
   StaticText ""
-  Option "Change FOV when holstered"  , m8f_wm_HolsterFovEnabled , OnOff
-  Slider "FOV when holstered"         , m8f_wm_HolsterFov        , 45.0, 180.0, 5.0
-  Slider "Speed with holstered weapon", M8fWeaponMenuHolsterSpeedMultiplier, 0.0, 3.0, 0.2
+  Option     "Change FOV when holstered"  , m8f_wm_HolsterFovEnabled , OnOff
+  Slider     "FOV when holstered"         , m8f_wm_HolsterFov        , 45.0, 180.0, 5.0
+  Slider     "Speed with holstered weapon", M8fWeaponMenuHolsterSpeedMultiplier, 0.0, 3.0, 0.2
   StaticText "Set this to 0.0 to disable speed change.", Black
+
+  StaticText ""
+  Slider     "Zoom Factor", m8f_wm_ZoomFactor, 1.0, 3.0, 0.1
+  StaticText "Set this to 1.0 if the weapon has its own zoom." , Black
+  StaticText "Don't change this while zoomed."                 , Black
+
+  StaticText ""
+  Slider     "Speed while zoomed"     , m8f_wm_ZoomSpeedMultiplier , 0.1, 1.0, 0.1
+  Option     "Zoom allowed on Slot 1" , m8f_wm_IsNotSlot1Melee     , YesNo
+
+  Option     "Lower weapon while zoomed", m8f_wm_LowerWeaponOnZoom, YesNo
+  StaticText "Don't change this while zoomed.", Black
+
+  StaticText ""
+  StaticText "Slomo Bullettime by Spaceman333", 1
+  Option     "Toggle Slomo on Zoom In"  , m8f_wm_SlomoOnZoomIn  , OnOff
+  Option     "Toggle Slomo on Zoom Out" , m8f_wm_SlomoOnZoomOut , OnOff
+
+  StaticText ""
+  StaticText "Target Spy", 1
+  Option     "Toggle Target Spy at Zoom In/Out" , m8f_wm_TargetSpyOnZoom , OnOff
+
+  StaticText ""
+  StaticText "Laser Sight", 1
+  Option     "Toggle Laser Sight at Zoom In/Out" , m8f_wm_LaserOnZoom, YesNo
 }
