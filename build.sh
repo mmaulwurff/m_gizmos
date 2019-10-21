@@ -11,8 +11,10 @@ filename=$name-$version.pk3
 
 rm -f $filename \
 && \
-zip $filename \
-    zscript/*.zs   \
+zip $filename    \
+    sounds/*.wav \
+    sounds/*.lmp \
+    zscript/*.zs \
     *.md  \
     *.txt \
     *.zs  \

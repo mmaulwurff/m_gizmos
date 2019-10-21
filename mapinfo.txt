@@ -8,5 +8,6 @@ gameinfo
                    , "mg_PreviousWeaponEventHandler"
                    , "mg_NextWeaponInSlotEventHandler"
                    , "mg_ZoomEventHandler"
+                   , "mg_WeaponChangeSoundEventHandler"
 
 } // gameinfo

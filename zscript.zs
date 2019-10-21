@@ -7,3 +7,4 @@ version 4.2
 #include "zscript/mg_previous_weapon.zs"
 #include "zscript/mg_next_weapon_in_slot.zs"
 #include "zscript/mg_zoom.zs"
+#include "zscript/mg_weapon_change_sound.zs"

@@ -14,3 +14,10 @@ License: GPLv3
 - a key to select the best weapon
 - a key to select the previously used weapon
 - a key to select the next weapon in the current slot
+- zoom
+- sound on switching weapons
+
+# Credits
+
+* All sounds and puff sprites are from [Freedoom](https://freedoom.github.io/).
+  Copyright © 2001-2017 Contributors to the Freedoom project. All rights reserved.

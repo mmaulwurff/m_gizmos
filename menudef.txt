@@ -1,7 +1,11 @@
+// Entry point /////////////////////////////////////////////////////////////////
+
 AddOptionMenu OptionsMenu
 {
   Submenu "m_Gizmos", mg_Options
 }
+
+// Menus ///////////////////////////////////////////////////////////////////////
 
 OptionMenu mg_Options
 {
@@ -9,6 +13,7 @@ OptionMenu mg_Options
 
   Submenu "Controls", mg_Controls
   Submenu "Gameplay", mg_Gameplay
+  Submenu "Sound"   , mg_Sound
 }
 
 OptionMenu mg_Controls
@@ -67,4 +72,25 @@ OptionMenu mg_Gameplay
   StaticText ""
   StaticText "Laser Sight", 1
   Option     "Toggle Laser Sight at Zoom In/Out" , m8f_wm_LaserOnZoom, YesNo
+}
+
+OptionMenu mg_Sound
+{
+  Title      "m_Gizmos Sound Options"
+
+  StaticText ""
+  Option     "Play sound on weapon change" , m8f_wm_PlaySoundOnWeaponChange, OnOff
+  Option     "Sound on weapon change"      , mg_weapon_change_sound, mg_SwitchSoundOptions
+}
+
+// Option values ///////////////////////////////////////////////////////////////
+
+OptionString mg_SwitchSoundOptions
+{
+  "wmenu/switch1" , "Click"
+  "wmenu/switch2" , "Hum"
+  "wmenu/switch3" , "Chk"
+  "menu/cursor"   , "Menu cursor"
+  "menu/change"   , "Menu change"
+  "misc/w_pkup"   , "Weapon pickup"
 }
