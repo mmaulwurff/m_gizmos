@@ -7,7 +7,9 @@
 
 !.gitignore
 !.gitattributes
-!**.txt
+
 !**.md
-!**.zs
 !**.sh
+!**.txt
+!**.wav
+!**.zs
