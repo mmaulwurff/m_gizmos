@@ -71,8 +71,6 @@ class mg_Holstered : Weapon
     +Inventory.UNDROPPABLE
     +Weapon.NOALERT
     +Weapon.CHEATNOTWEAPON
-
-    Weapon.SlotNumber 0;
   }
 
   States
