@@ -1,4 +1,4 @@
-/* Copyright Alexander 'm8f' Kromm (mmaulwurff@gmail.com) 2019
+/* Copyright Alexander 'm8f' Kromm (mmaulwurff@gmail.com) 2019, 2022
  *
  * This file is a part of m_gizmos.
  *
@@ -32,23 +32,23 @@ class mg_NextWeaponInSlotEventHandler : EventHandler
   private static
   void selectNextWeaponInSlot(PlayerInfo player)
   {
-    let ready = player.ReadyWeapon;
-    if (ready == NULL) return;
+    if (player.ReadyWeapon == NULL || player.mo == NULL) return;
 
     bool located;
     int  slot;
     int  index;
-    [located, slot, index] = player.weapons.LocateWeapon(ready.GetClassName());
+    [located, slot, index] = player.weapons.LocateWeapon(player.ReadyWeapon.GetClassName());
     int  slotSize = player.weapons.SlotSize(slot);
-    int  nextIndex = (index - 1 + slotSize) % slotSize;
-    let  nextWeaponInSlotClass = player.weapons.GetWeapon(slot, nextIndex);
-    let  pawn = player.mo;
-    if (pawn == NULL) return;
 
-    let nextWeaponInSlot = pawn.FindInventory(nextWeaponInSlotClass);
-    if (nextWeaponInSlot == NULL || nextWeaponInSlot == ready) return;
-
-    player.PendingWeapon = Weapon(nextWeaponInSlot);
+    for (int i = 1; i < slotSize; ++i)
+    {
+      int nextIndex = (index - i + slotSize) % slotSize;
+      class<Inventory> nextWeaponClass =
+        Actor.GetReplacement(player.weapons.GetWeapon(slot, nextIndex)).getClassName();
+      let nextWeapon = player.mo.FindInventory(nextWeaponClass);
+      if (nextWeapon == NULL || nextWeapon == player.ReadyWeapon) continue;
+      player.PendingWeapon = Weapon(nextWeapon);
+    }
   }
 
 } // class mg_NextWeaponInSlotEventHandler
