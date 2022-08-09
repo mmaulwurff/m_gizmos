@@ -8,8 +8,8 @@
 !.gitignore
 !.gitattributes
 
-!**.md
-!**.sh
-!**.txt
-!**.wav
-!**.zs
+!*.md
+!*.sh
+!*.txt
+!*.wav
+!*.zs
