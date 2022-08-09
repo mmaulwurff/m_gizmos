@@ -19,7 +19,9 @@ OptionMenu mg_Options
 OptionMenu mg_Controls
 {
   Title      "m_Gizmos Controls"
+  StaticTextSwitchable "$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
 
+  StaticText ""
   Control    "Throw Junk", m8f_wm_throw_junk
   StaticText "0 damage hitscan attack. Also alerts enemies.", Black
 
