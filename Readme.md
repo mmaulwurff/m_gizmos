@@ -6,7 +6,7 @@ Author: m8f
 
 License: GPLv3
 
-# Features
+## Features
 
 - infinite ammo for slot 2
 - throwing junk (zero-damage hitscan attack)
@@ -17,7 +17,11 @@ License: GPLv3
 - zoom
 - sound on switching weapons
 
-# Credits
+## Acknowledgments
+
+- Thanks to anomyn for bug reports.
+
+## Credits
 
 * All sounds and puff sprites are from [Freedoom](https://freedoom.github.io/).
   Copyright © 2001-2017 Contributors to the Freedoom project. All rights reserved.
